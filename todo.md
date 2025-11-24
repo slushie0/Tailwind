@@ -1,6 +1,7 @@
 Todo:
 short term:
 
+- [ ] fix search results behind metar cards
 - [ ] make all cards same width
 - [ ] fix for unusual screens (settings/input overlap)
 - [ ] smooth transition on metar load
