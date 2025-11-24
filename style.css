@@ -15,6 +15,7 @@ body {
 
 /* Search bar large initially */
 .search-bar {
+  position: relative;
   max-width: 600px;
   width: 100%;
 }
@@ -39,6 +40,14 @@ body {
     transform: translateY(-100%);
     opacity: 0;
   }
+}
+
+#search-block {
+  max-height: 70vh;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
 }
 
 /* After search: slide up & shrink */
