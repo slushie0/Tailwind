@@ -1,6 +1,8 @@
 Todo:
 short term:
 
+commit test
+
 - [ ] fix search results behind metar cards
 - [ ] make all cards same width
 - [ ] fix for unusual screens (settings/input overlap)
