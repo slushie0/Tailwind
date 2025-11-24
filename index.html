@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <script src="papaparse.js"></script>
   <script src="fetch-metar.js"></script>
+  <script src="search.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,12 +22,14 @@
     <div class="input-group mb-3">
       <input id="query" type="text" class="form-control" placeholder="ICAO code or Airport name"
         aria-label="Airport Identifier" aria-describedby="query" autocomplete="off"
-        onfocus="document.body.classList.add('search-active')" onblur="blurSearch()" /><!--oninput="search()"-->
+        onfocus="document.body.classList.add('search-active')" onblur="blurSearch()" oninput="search()"/><!--oninput="search()"-->
       <button class="btn btn-outline-primary" type="button" id="submit-btn" onclick="submit()">
         <i class="bi bi-search"></i>
       </button>
     </div>
-    <div class="list-group visually-hidden" id="search-results"></div>
+    <div class="list-group visually-hidden" id="search-block">
+      <div class="list-group" id="search-results"></div>
+    </div>
   </div>
 
   <!-- Results -->
